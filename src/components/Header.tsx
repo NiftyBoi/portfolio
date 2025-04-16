@@ -14,12 +14,12 @@ const Header = () => {
                 About
                     <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#Portfolio" className="group relative text-lg text-white">
-                Portfolio
+                <a href="#Portafolio" className="group relative text-lg text-white">
+                Portafolio
                     <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#Proyectos" className="group relative text-lg text-white">
-                Proyectos
+                <a href="#Contactos" className="group relative text-lg text-white">
+                Contactos
                     <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 </nav>
