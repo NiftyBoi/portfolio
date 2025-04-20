@@ -1,10 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import About from '../components/About';
 
 const Home = () => {
   return (
     <div className="scroll-smooth">
+       {/* Header */}
       <Header />
 
       {/* Sección Home ; con el id se puede identificar a donde quieres que te lleve al hacer clic en el nav*/}
@@ -15,13 +17,8 @@ const Home = () => {
       </section>
 
       {/* Sección About */}
-      <section id="About" className="min-h-screen bg-white px-10 py-20 flex items-center justify-center">
-        <div className="max-w-2xl text-center">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-lg text-gray-700">
-            ¡Aqui va algo sobre mi y las herramientas y teconologias que uso
-          </p>
-        </div>
+      <section id="About" className="min-h-screen bg-black px-10 py-20 flex items-center justify-center">
+        <About />
       </section>
 
       {/* Sección Portafolio */}

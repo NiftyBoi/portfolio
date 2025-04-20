@@ -8,19 +8,19 @@ const Header = () => {
                 <nav className="space-x-8">
                 <a href="#Home" className="group relative text-lg text-white">
                 Home
-                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-[#A52A2A] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#About" className="group relative text-lg text-white">
                 About
-                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-[#A52A2A] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#Portafolio" className="group relative text-lg text-white">
                 Portafolio
-                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-[#A52A2A] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#Contactos" className="group relative text-lg text-white">
                 Contactos
-                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-1 h-[3px] w-0 bg-[#A52A2A] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 </nav>
             </div>
