@@ -17,7 +17,7 @@ const Carousel = () => {
   return (
     <div className="bg-black  py-8">
   <div className="max-w-5xl mx-auto px-4">
-    <h2 className="text-center text-white text-2xl font-semibold mb-6">
+    <h2 className="text-center text-white text-2xl  font-poppins font-semibold mb-6">
       Tecnologías
     </h2>
     <Marquee speed={50} gradient={false}>

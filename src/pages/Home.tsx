@@ -9,7 +9,7 @@ const Home = () => {
       {/* Sección Home ; con el id se puede identificar a donde quieres que te lleve al hacer clic en el nav*/}
       <section id="Home" className="min-h-screen bg-black px-10 py-20 flex items-center justify-center">
       <div className="max-w-3xl text-center">
-          <h2 className="text-4xl font-bold mb-4 text-white">Home</h2>
+          <h2 className="text-4xl mb-4 text-white">Home</h2>
           <p className="text-lg text-white">
             Aqui va una presentacion .
           </p>

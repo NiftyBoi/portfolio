@@ -12,8 +12,8 @@ function About() {
 
       {/* Aquí centramos verticalmente el texto con justify-center */}
       <div className="md:w-1/2 items-center justify-center h-full ">
-        <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#A52A2A]">About me</h1>
-        <p className='text-lg text-white font-Lato text-justify min-h-[5px]'>
+        <h1 className="text-3xl md:text-5xl mb-6 text-[#A52A2A] font-bold font-poppins ">About me</h1>
+        <p className='text-lg text-white  text-justify min-h-[5px] font-poppins'>
           Lorem ipsum dolor sit amet consectetur adipiscing elit odio duis, 
           felis quam eu aliquam nullam sodales netus tristique egestas, 
           mauris mi feugiat sem torquent viverra cursus ridiculus. 

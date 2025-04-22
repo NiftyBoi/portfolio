@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <section id="projects" className="bg-black py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-white text-4xl font-semibold text-center mb-12">
+        <h2 className="text-white text-4xl font-semibold  font-poppins text-center mb-12">
           My Works
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -39,7 +39,7 @@ const Projects = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
+                <h3 className="text-2xl font-semibold  font-poppins text-white">{project.title}</h3>
                 <p className="text-gray-600 mt-2">{project.description}</p>
                 <a
                   href={project.link}
