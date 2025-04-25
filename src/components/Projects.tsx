@@ -1,11 +1,12 @@
 // src/components/Projects.tsx
 import React from "react";
+import imgProjects1 from "../assets/project1.jpeg";
 
 const projects = [
   {
     title: "Proyecto 1Título",
     description: "Este es un proyecto increíble donde creamos una app móvil.",
-    img: "/images/project1.jpeg",
+    img: imgProjects1,
     link: "#", // Enlace al proyecto o repositorio
   },
   {
@@ -24,10 +25,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-black py-16">
+    <section id="projects" className="bg-black py-16 font-poppins">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-white text-4xl font-semibold  font-poppins text-center mb-12">
-          My Works
+        <h2 className="text-[#A52A2A] text-4xl font-semibold font-poppins text-center mb-12">
+          Mis <span className='text-white'>Proyectos </span> 
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

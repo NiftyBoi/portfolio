@@ -4,7 +4,7 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="bg-white dark:bg-black text-black dark:text-white py-10">
+    <div className="bg-white dark:bg-black text-black dark:text-white">
       
       {/* Header */}
       <Header />
