@@ -4,7 +4,7 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="bg-white dark:bg-black text-black dark:text-white">
+    <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen transition-colors duration-500">
       
       {/* Header */}
       <Header />

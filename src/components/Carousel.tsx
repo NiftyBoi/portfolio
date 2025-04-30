@@ -14,25 +14,23 @@ const Stack: TechItem[] = [
   { name: "Javascript", icon: DiJavascript},
   { name: "HTML", icon: DiHtml5},
   { name: "css", icon: DiCss3},
-  { name: "Tailwind", icon: RiTailwindCssFill},
-  { name: "C sharp", icon: TbBrandCSharp},
-  { name: "SQL", icon: TbSql},
+  { name: "Tailwind", icon: RiTailwindCssFill}
 ];
 
 const Carousel = () => {
   return (
-    <div className="bg-black  py-8">
+    <div className="bg-black py-8 dark:bg-slate-100">
      <div className="max-w-5xl mx-auto px-4">
-     <h2 className="text-center text-white text-3xl font-poppins font-semibold mb-6">
+     <h2 className="text-center text-white text-3xl font-poppins font-semibold mb-6 dark:bg-slate-100 dark:text-black">
       Tecnologías
     </h2>
     <Marquee speed={50} gradient={false}>
       {Stack.map((tech, index) => {
         const Icon = tech.icon; // <- Componente del ícono
         return (
-          <div key={index} className="mx-8 flex flex-col items-center justify-center">
-            <Icon className=" text-white text-5xl grayscale hover:grayscale-0 transition duration-300" />
-            <p className="text-white mt-2">{tech.name}</p>
+          <div key={index} className="mx-8 flex flex-col items-center justify-center">s
+            <Icon className=" text-white text-5xl grayscale hover:grayscale-0 transition dark:bg-slate-100 duration-300 dark:bg-white dark:text-black" />
+            <p className="text-white mt-2 dark:bg-slate-100 dark:text-black">{tech.name}</p>
           </div>
         );
       })}

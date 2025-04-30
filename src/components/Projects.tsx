@@ -25,14 +25,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-black py-16 font-poppins">
+    <section id="projects" className="bg-black py-16 font-poppins dark:bg-slate-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-[#A52A2A] text-4xl font-semibold font-poppins text-center mb-12">
-          Mis <span className='text-white'>Proyectos </span> 
+        <h2 className="text-red-800 text-4xl font-semibold font-poppins text-center mb-12">
+          Mis <span className='text-white dark:text-black'>Proyectos </span> 
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index}   className="rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl"
+            <div key={index}   className="rounded-lg border-4 border-zinc-800 dark:border-red-800 overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl "
                 style={{ backgroundColor: "#1d1e1e"}}>
               <img
                 src={project.img}
@@ -45,7 +45,7 @@ const Projects = () => {
                 <a
                   href={project.link}
                   className=" hover:underline mt-4 inline-block"
-                  style={{color: "#A52A2A"}}
+                  style={{color: "red-800"}}
                 >
                   View Project
                 </a>

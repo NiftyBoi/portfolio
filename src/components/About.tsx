@@ -11,11 +11,11 @@ function About() {
       </div>
 
       {/* Aquí centramos verticalmente el texto con justify-center */}
-      <div className="md:w-1/2 items-center justify-center h-full font-poppins">
-        <h2 className='font-bold text-white text-5xl '>
-          Sobre <span className='text-[#A52A2A]'>Mi</span>
+      <div className="md:w-1/2 items-center justify-center h-full font-poppins ">
+        <h2 className='font-bold text-white text-5xl dark:text-black'>
+          Sobre <span className='text-red-800'>Mi</span>
         </h2> 
-        <p className='text-l text-white text-justify min-h-[5px]'>
+        <p className='text-l text-white text-justify min-h-[5px] dark:text-black dark:bg-gray-100/70 dark:backdrop-blur-lg dark:border dark:border-red-800 dark:shadow-lg rounded-lg p-4'>
           Lorem ipsum dolor sit amet consectetur adipiscing elit odio duis, 
           felis quam eu aliquam nullam sodales netus tristique egestas, 
           mauris mi feugiat sem torquent viverra cursus ridiculus. 
