@@ -2,7 +2,6 @@ import Marquee from "react-fast-marquee";
 import { IconType } from "react-icons";
 import { RiReactjsLine, RiTailwindCssFill  } from "react-icons/ri";
 import { DiJavascript, DiHtml5, DiCss3   } from "react-icons/di";
-import { TbBrandCSharp, TbSql  } from "react-icons/tb";
 
 type TechItem = {
   name: string;
