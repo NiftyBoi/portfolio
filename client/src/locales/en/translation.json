@@ -1,0 +1,46 @@
+{
+  "header": {
+    "title": "My Portfolio",
+    "home": "Home",
+    "about": "About me",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About",
+    "me": "Me",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio duis, felis quam eu aliquam nullam sodales netus tristique egestas, mauris mi feugiat sem torquent viverra cursus ridiculus. Inceptos mus luctus mattis curabitur risus tristique augue purus sem condimentum donec fringilla, parturient quam natoque leo morbi etiam convallis taciti quisque feugiat libero. Bibendum non semper aliquet consequat vel magnis sollicitudin diam, arcu quam pulvinar vivamus cum nisi sodales."
+  },
+  "carousel": {
+    "title": "Tecnologies"
+  },
+  "projects": {
+    "title": "My",
+    "projects": "Projects",
+    "items": [
+      {
+        "title": "Project 1 Title",
+        "description": "This is an amazing project where we created a mobile app."
+      },
+      {
+        "title": "Project 2 Title",
+        "description": "This project is about how blockchain changed the world."
+      },
+      {
+        "title": "Project 3 Title",
+        "description": "Hello this is a project that explores the negative characteristics of human beings."
+      }
+    ],
+    "viewProject": "View Project"
+  },
+  "contact": {
+    "title": "Contact",
+    "me": "Me!",
+    "email": "Email",
+    "location": "Ubicación",
+    "button": "Send Message"
+  },
+  "footer": {
+    "title": "© 2025 My Portfolio. All Right Reserver."
+  }
+}

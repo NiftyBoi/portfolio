@@ -1,0 +1,46 @@
+{
+  "header": {
+    "title": "Mi Portafolio",
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre",
+    "me": "Mi",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio duis, felis quam eu aliquam nullam sodales netus tristique egestas, mauris mi feugiat sem torquent viverra cursus ridiculus. Inceptos mus luctus mattis curabitur risus tristique augue purus sem condimentum donec fringilla, parturient quam natoque leo morbi etiam convallis taciti quisque feugiat libero. Bibendum non semper aliquet consequat vel magnis sollicitudin diam, arcu quam pulvinar vivamus cum nisi sodales."
+  },
+  "carousel": {
+    "title": "Tecnologías"
+  },
+  "projects": {
+    "title": "Mis",
+    "projects": "Proyectos",
+    "items": [
+      {
+        "title": "Proyecto 1 Título",
+        "description": "Este es un proyecto increíble donde creamos una app móvil."
+      },
+      {
+        "title": "Proyecto 2 Título",
+        "description": "Este proyecto trata de cómo el blockchain cambió al mundo."
+      },
+      {
+        "title": "Proyecto 3 Título",
+        "description": "Hola este es un proyecto que explora las características negativas del ser humano."
+      }
+    ],
+    "viewProject": "Ver Proyecto"
+  },
+  "contact": {
+    "title": "Mi",
+    "me": "Contacto!",
+    "email": "Correo electrónico",
+    "location": "Ubicación",
+    "button": "Enviar Mensaje"
+  },
+  "footer": {
+    "title": "© 2025 Mi Portafolio. Todos los derechos reservados."
+  }
+}
