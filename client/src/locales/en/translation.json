@@ -4,7 +4,7 @@
     "home": "Home",
     "about": "About me",
     "portfolio": "Portfolio",
-    "contact": "Contact"
+    "contact": "Contact"    
   },
   "about": {
     "title": "About",
@@ -38,9 +38,17 @@
     "me": "Me!",
     "email": "Email",
     "location": "Ubicación",
-    "button": "Send Message"
+    "button": "Send Message",
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    }
   },
   "footer": {
     "title": "© 2025 My Portfolio. All Right Reserver."
+  },
+  "curriculum": {
+    "downloadCV": "Download CV"
   }
 }

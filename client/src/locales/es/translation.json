@@ -38,9 +38,17 @@
     "me": "Contacto!",
     "email": "Correo electrónico",
     "location": "Ubicación",
-    "button": "Enviar Mensaje"
+    "button": "Enviar Mensaje",
+    "placeholders": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje"
+    }
   },
   "footer": {
     "title": "© 2025 Mi Portafolio. Todos los derechos reservados."
+  },
+  "curriculum": {
+    "downloadCV": "Descargar CV"
   }
 }

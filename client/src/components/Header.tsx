@@ -67,7 +67,7 @@ const Header = () => {
     <header
       className={`fixed z-50 text-slate-100 backdrop-blur-md shadow-md transition-all duration-500 dark:text-slate-100 ${
         isScrolled
-          ? 'top-4 left-1/2 -translate-x-1/2 w-[53.2%] rounded-full px-6 py-2 bg-slate-100/10 dark:bg-black dark:text-black'
+          ? 'top-4 left-1/2 -translate-x-1/2 w-[73.2%] rounded-full px-6 py-2 bg-slate-100/10 dark:bg-black dark:text-black'
           : 'top-0 left-0 w-full rounded-none px-24 py-4 dark:bg-black'
       }`}
     >
@@ -77,23 +77,19 @@ const Header = () => {
         <h1 className={`font-poppins font-bold ${isScrolled ? 'text-lg' : 'text-2xl'}`}>
           {t('header.title')} {/* Texto traducido */}
         </h1>
+        
 
         {/* Barra de navegación */}
         <nav className="flex items-center space-x-4 md:space-x-8 text-base font-poppins">
           {/* Mapeamos los items del menú */}
           {['home', 'about', 'portfolio', 'contact'].map((item) => (
-            <a
-              key={item}
-              href={`#${item}`}
-              className="group relative"
-            >
+            <a key={item} href={`#${item}`} className="group relative">
               {/* Texto del enlace traducido */}
               {t(`header.${item}`)}
               {/* Efecto de subrayado al hover */}
-              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-800 group-hover:w-full rounded"></span>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-800 group-hover:w-full rounded transition-all duration-300 ease-in-out origin-left"></span>
             </a>
-          ))}
-
+          ))} 
           {/* Separador visual */}
           <span className="mx-2 text-white dark:text-white">|</span>
 
