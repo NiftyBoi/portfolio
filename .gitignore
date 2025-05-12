@@ -1,24 +1,90 @@
-# Logs
-logs
+# ==============================
+# Entorno y dependencias
+# ==============================
+node_modules/
+*/node_modules/
+.pnpm-debug.log
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ==============================
+# Archivos de entorno
+# ==============================
+.env
+.env.*
+!.env.example
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ==============================
+# Logs y caché
+# ==============================
 *.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.cache/
+.temp/
+.typescript/
 
-node_modules
-dist
-dist-ssr
-*.local
+# ==============================
+# Build y distribución
+# ==============================
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.client_build/
+.server_build/
+*.tsbuildinfo
 
-# Editor directories and files
+# ==============================
+# Editor/IDE
+# ==============================
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.code-workspace
+
+# ==============================
+# Sistema operativo
+# ==============================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+._*
+
+# ==============================
+# Específico de proyectos
+# ==============================
+# Frontend (Vite/React)
+.cache/
+.turbo/
+
+# Backend (Node.js)
+coverage/
+.nyc_output/
+
+# ==============================
+# Archivos de configuración personalizados
+# ==============================
+*.local
+*.bak
+*.tmp
+*-debug.log
