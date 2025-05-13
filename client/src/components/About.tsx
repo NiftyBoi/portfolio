@@ -1,5 +1,4 @@
 // Importación de React y el hook de traducción de i18next
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 // Componente funcional About

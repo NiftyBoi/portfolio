@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
