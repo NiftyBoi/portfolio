@@ -1,50 +1,37 @@
-// Importación de React y el hook de traducción de i18next
 import { useTranslation } from 'react-i18next';
 import Cat3d from './models3d/Cat3d';
 
-// Componente funcional About
 function About() {
-  // Hook que permite usar textos traducidos con i18n
   const { t } = useTranslation();
 
+  const paragraphClass =
+    'text-slate-100 dark:text-black text-justify text-base md:text-xl leading-snug'; // más ancho, menos alto
+
   return (
-    // Contenedor principal con diseño responsivo: columna en móviles y fila en pantallas medianas o mayores
-    <div className='flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-6xl mx-auto px-6 py-12 h-full'>
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-7xl px-6 mx-auto py-12">
       
-      {/* Contenedor de la imagen (50% de ancho en pantallas medianas) */}
-      <div className="w-full md:w-5/12 flex justify-center">
-        {/* Imagen animada (GIF) con estilos de tamaño, borde redondeado y sombra */}
-        {/*         <img 
-          src="https://c.tenor.com/4XYAgRvDR2QAAAAd/tenor.gif" 
-          alt="Luffy" 
-          className='h-full min-h-[385px] w-auto object-cover rounded-xl shadow-xl'
-        /> */}
-      <Cat3d />
+      {/* Modelo 3D */}
+      <div className="w-full md:w-4/12 flex justify-center">
+        <Cat3d />
       </div>
 
-      {/* Contenedor del texto (70% de ancho en pantallas medianas) */}
-      <div className="w-full md:w-7/12 space-y-6 font-poppins">
-        
-        {/* Título principal con traducción y parte resaltada en rojo */}
-        <h2 className='font-bold text-slate-100 text-4xl md:text-5xl dark:text-black'>
-          {/* Primera parte del título (ej: "Sobre") */}
+      {/* Texto descriptivo */}
+      <div className="w-full md:w-8/12 space-y-6 font-poppins">
+        <h2 className="font-bold text-slate-100 text-5xl md:text-6xl dark:text-black">
           <span>{t('about.title')}</span>
-          {/* Segunda parte resaltada (ej: "mí") */}
-          <span className='text-red-800'> {t('about.me')}</span>
-        </h2> 
-        
-        {/* Contenedor del párrafo de descripción con fondo transparente o blanco dependiendo del modo */}
-        <div className='bg-slate-100/10 dark:bg-gray-100/70 dark:backdrop-blur-lg border border-transparent dark:border-red-800 rounded-lg shadow-lg p-6'>
-          
-          {/* Párrafo de texto justificado y traducido */}
-          <p className='text-slate-100 dark:text-black text-justify text-base md:text-lg leading-relaxed'>
-            {t('about.description')}
-          </p>
+          <span className="text-red-800"> {t('about.me')}</span>
+        </h2>
+
+        <div className="bg-slate-100/10 dark:bg-gray-100/70 dark:backdrop-blur-lg border border-transparent dark:border-red-800 rounded-lg shadow-lg p-8 space-y-3">
+          {[1, 2, 3, 4].map((i) => (
+            <p key={i} className={paragraphClass}>
+              {t(`about.description.p${i}`)}
+            </p>
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-// Exportamos el componente para poder usarlo en otros archivos
 export default About;

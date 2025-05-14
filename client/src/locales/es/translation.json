@@ -9,8 +9,12 @@
   "about": {
     "title": "Sobre",
     "me": "Mi",
-    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio duis, felis quam eu aliquam nullam sodales netus tristique egestas, mauris mi feugiat sem torquent viverra cursus ridiculus. Inceptos mus luctus mattis curabitur risus tristique augue purus sem condimentum donec fringilla, parturient quam natoque leo morbi etiam convallis taciti quisque feugiat libero. Bibendum non semper aliquet consequat vel magnis sollicitudin diam, arcu quam pulvinar vivamus cum nisi sodales."
-  },
+    "description": {
+      "p1": "¡Hola! Soy Matias Cruz, un desarrollador web apasionado por la tecnología y el diseño. Mi objetivo es crear experiencias digitales únicas, funcionales y fáciles de usar. Me encanta trabajar tanto en el frontend como en el backend, lo que me permite tener una visión completa de cada proyecto que desarrollo.",
+      "p2": "Trabajo con tecnologías modernas como React, Node.js, CSS3, HTML5, JavaScript, entre otras.",
+      "p3": "Soy un aprendiz constante, siempre en busca de nuevos retos y desafíos para mejorar mis habilidades como profesional. Mi pasión por la tecnología me impulsa a estar al tanto de las últimas tendencias y herramientas.",
+      "p4": "Me gusta adoptar un enfoque colaborativo y orientado a resultados, trabajando en equipo para lograr el éxito conjunto. Si estás buscando alguien con una mentalidad creativa y proactiva, ¡no dudes en contactarme!"
+    }},
   "carousel": {
     "title": "Tecnologías"
   },

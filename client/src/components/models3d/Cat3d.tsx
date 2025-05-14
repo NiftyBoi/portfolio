@@ -9,7 +9,7 @@ const Cat3d = () => {
 
 return(
     <div>
-        <Canvas orthographic camera={{ zoom: 180, position: [0, 0, 5] }} style={{ height: '600px', width: '600px' }}>
+        <Canvas orthographic camera={{ zoom: 230, position: [0, 0, 5] }} style={{ height: '600px', width: '600px' }}>
             <ambientLight intensity={1.5} />
             <directionalLight position={[5, 5, 5]} intensity={1} />
             <OrbitControls enablePan={false} />

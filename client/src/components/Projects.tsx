@@ -1,6 +1,3 @@
-// Importa React para poder usar JSX
-import React from "react";
-
 // Importa una imagen para mostrar en el primer proyecto
 import imgProjects1 from "../assets/project1.jpeg";
 

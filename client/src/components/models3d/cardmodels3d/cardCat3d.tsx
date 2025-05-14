@@ -30,7 +30,7 @@ export const CardCat3d = ({scene, animations}: CardCat3dProps) => {
   });
 
   return (
-    <group position={[0, -5, 0]} rotation={[0, Math.PI/1, 0]}>
+    <group position={[0, -5, 0]} rotation={[0, Math.PI/5, 0]}>
       <primitive object={scene} />
     </group>
   );
