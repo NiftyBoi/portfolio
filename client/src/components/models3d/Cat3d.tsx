@@ -7,17 +7,18 @@ const Cat3d = () => {
     const { scene , animations} = useGLTF('/bananacat.glb') as any;
 
 
-    return(
+return(
     <div>
-        <Canvas orthographic camera={{ zoom: 100, position: [0, -1, 5], fov:50 }} style={{ height: '500px', width: '500px' }}>
-            <ambientLight intensity={2} />
-            <OrbitControls />
-                <Suspense>
-                    <CardCat3d scene={scene} animations={animations}/>
-                </Suspense>
+        <Canvas orthographic camera={{ zoom: 180, position: [0, 0, 5] }} style={{ height: '600px', width: '600px' }}>
+            <ambientLight intensity={1.5} />
+            <directionalLight position={[5, 5, 5]} intensity={1} />
+            <OrbitControls enablePan={false} />
+            <Suspense>
+                <CardCat3d scene={scene} animations={animations} />
+            </Suspense>
         </Canvas>
     </div>
-    );
+);
 };
 
 export default Cat3d;

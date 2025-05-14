@@ -26,11 +26,12 @@ export const CardCat3d = ({scene, animations}: CardCat3dProps) => {
   }, [scene, animations]);
 
   useFrame((_, delta) => {
-    if (mixerRef.current) {
-      mixerRef.current.update(delta);
-    }
+    mixerRef.current?.update(delta);
   });
 
-  return <primitive object={scene}/>;
-
+  return (
+    <group position={[0, -5, 0]} rotation={[0, Math.PI/1, 0]}>
+      <primitive object={scene} />
+    </group>
+  );
 };

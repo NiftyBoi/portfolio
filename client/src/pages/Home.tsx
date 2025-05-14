@@ -7,9 +7,11 @@ import Cat3d from '../components/models3d/Cat3d';
 const Home = () => {
   return (
     <div className="scroll-smooth">
+      {/*}
       <section id="home" className="min-h-screen bg-black dark:bg-slate-100 flex flex-col items-center justify-center gap-20">
         <Cat3d />
       </section>
+      */}
       {/* Sección About */}
       <section id="about" className="min-h-screen bg-black dark:bg-slate-100 flex flex-col items-center justify-center gap-20">
         <About />

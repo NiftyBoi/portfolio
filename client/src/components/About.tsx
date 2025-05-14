@@ -1,6 +1,6 @@
 // Importación de React y el hook de traducción de i18next
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Cat3d from './models3d/Cat3d';
 
 // Componente funcional About
 function About() {
@@ -14,11 +14,12 @@ function About() {
       {/* Contenedor de la imagen (50% de ancho en pantallas medianas) */}
       <div className="w-full md:w-5/12 flex justify-center">
         {/* Imagen animada (GIF) con estilos de tamaño, borde redondeado y sombra */}
-        <img 
+        {/*         <img 
           src="https://c.tenor.com/4XYAgRvDR2QAAAAd/tenor.gif" 
           alt="Luffy" 
           className='h-full min-h-[385px] w-auto object-cover rounded-xl shadow-xl'
-        />
+        /> */}
+      <Cat3d />
       </div>
 
       {/* Contenedor del texto (70% de ancho en pantallas medianas) */}
