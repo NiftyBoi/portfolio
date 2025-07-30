@@ -19,25 +19,21 @@
   "carousel": {
     "title": "Technologies"
   },
-  "projects": {
-    "title": "My",
-    "projects": "Projects",
-    "items": [
-      {
-        "title": "Project 1 Title",
-        "description": "This is an amazing project where we created a mobile app."
-      },
-      {
-        "title": "Project 2 Title",
-        "description": "This project is about how blockchain changed the world."
-      },
-      {
-        "title": "Project 3 Title",
-        "description": "This is a project that explores the negative traits of human nature."
-      }
-    ],
-    "viewProject": "View Project"
+"projectData": {
+  "Hotel-Veranum": {
+    "title": "Hotel Veranum",
+    "description": "Project for Hotel Veranum, including user login, room reservations, and admin panels."
   },
+  "Fast-Notes": {
+    "title": "Fast Notes",
+    "description": "Stylish notes for your desktop or laptop."
+  },
+  "My First Game": {
+    "title": "My First Game",
+    "description": "Collaborative Unity game using C# with Lovnelies."
+  }
+}
+,
   "contact": {
     "title": "My",
     "me": "Contact!",

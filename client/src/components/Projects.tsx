@@ -12,21 +12,7 @@ const Projects = () => {
   const [projects, setProjects] = useState<GitHubProject[]>([]);
 
   const excludedRepos = ['chatbot', 'niftyboi', 'portfolio', 'uptolimit'];
- 
-  // 👇 Mapeo de nombres personalizados
-  const customNames: { [key: string]: string } = {
-    "Hotel-Veranum": "Hotel Veranum"
-    // Agrega más mapeos aquí
-  };
 
-  // 👇 Mapeo de descripciones personalizadas
-  const customDescriptions: { [key: string]: string } = {
-    "Hotel-Veranum": "Proyecto para Hotel Veranum, con ingreso y registro de usuarios, reserva de habitaciones y paneles administrativos.",
-    "Fast-Notes": "Notas con estilo para tu computadora o portátil.",
-    // Agrega más descripciones aquí
-  };
-
-  // 👇 Agrega colaboraciones manualmente aquí
   const featuredCollaborations: GitHubProject[] = [
     {
       name: "My First Game",
@@ -65,7 +51,6 @@ const Projects = () => {
               className="rounded-lg border-4 border-red-800 dark:border-red-800 overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl"
               style={{ backgroundColor: "#1d1e1e" }}
             >
-              {/* Contenedor con flexbox para centrar la imagen */}
               <div className="h-64 flex items-center justify-center bg-gray-50 dark:bg-gray-900">
                 <img
                   src={`/images/project${index + 1}.png`}
@@ -76,10 +61,10 @@ const Projects = () => {
 
               <div className="p-4">
                 <h3 className="text-2xl font-semibold text-red-800">
-                  {customNames[project.name] || project.name}
+                  {t(`projectData.${project.name}.title`, { defaultValue: project.name })}
                 </h3>
                 <p className="text-slate-100 mt-2">
-                  {customDescriptions[project.name] || project.description || 'No description provided.'}
+                  {t(`projectData.${project.name}.description`, { defaultValue: project.description || 'No description provided.' })}
                 </p>
                 <a
                   href={project.html_url}
