@@ -36,7 +36,7 @@ const Carousel = () => {
 
   return (
     // Fondo negro o claro dependiendo del modo (dark mode o light mode)
-    <div className="bg-black py-8 dark:bg-slate-100">
+    <div className=" py-8 dark:bg-slate-100">
 
       {/* Contenedor del carrusel con ancho máximo y centrado */}
       <div className="max-w-5xl mx-auto px-4 ">

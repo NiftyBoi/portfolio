@@ -52,7 +52,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-black dark:bg-slate-100 text-white py-12 px-4 font-poppins">
+    <div className=" dark:bg-slate-100 text-white py-12 px-4 font-poppins">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
         
         {/* IZQUIERDA: Información de contacto */}

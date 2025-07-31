@@ -23,6 +23,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -36,46 +37,35 @@ const Header = () => {
     setShowLanguageDropdown(false);
   };
 
-  // Función para reiniciar la página al hacer clic en el título
   const handleTitleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    // Si quieres recargar completamente la página, descomenta la siguiente línea:
-    // window.location.reload();
   };
 
   return (
     <header
-      className={`fixed z-50 text-slate-100 backdrop-blur-md shadow-md transition-all duration-500 dark:text-slate-100 ${
-        isScrolled
-          ? 'top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-4xl rounded-full px-3 sm:px-6 py-2 sm:py-3 bg-slate-100/10 dark:bg-black dark:text-black'
-          : 'top-0 left-0 w-full rounded-none px-4 sm:px-8 md:px-16 lg:px-24 py-4 sm:py-6 dark:bg-black'
-      }`}
+      className={`fixed z-50 left-1/2 -translate-x-1/2 transform transition-all duration-500 ease-in-out backdrop-blur-md shadow-md dark:text-slate-100 ${isScrolled
+          ? 'top-4 w-[90%] max-w-4xl px-4 py-2 rounded-full scale-95 bg-slate-100/10 dark:bg-black/40 text-white'
+          : 'top-0 w-full px-6 sm:px-12 py-6 rounded-none scale-100 bg-black/50 dark:bg-black/80 text-slate-200'}
+      `}
     >
-      <div className={`flex justify-between items-center w-full ${
-        isScrolled ? 'px-2 sm:px-6 py-2 sm:py-3' : 'px-0'
-      }`}>
-        {/* Título con mejor responsividad */}
-        <h1 
+      <div className={`flex justify-between items-center w-full ${isScrolled ? 'px-2 sm:px-6 py-2 sm:py-3' : 'px-0'}`}>
+        <h1
           onClick={handleTitleClick}
-          className={`font-poppins font-bold cursor-pointer hover:text-red-800 transition-colors duration-300 whitespace-nowrap ${
-            isScrolled 
-              ? 'text-sm sm:text-lg md:text-xl' 
-              : 'text-lg sm:text-xl md:text-2xl lg:text-3xl'
+          className={`font-poppins font-bold cursor-pointer hover:text-red-800 transition-all duration-300 whitespace-nowrap transform ${
+            isScrolled ? 'text-sm sm:text-lg scale-95' : 'text-2xl sm:text-3xl scale-100'
           }`}
         >
           {t('header.title')}
         </h1>
 
-        {/* Navegación más responsiva */}
         <nav className="flex items-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8 text-sm sm:text-base md:text-lg font-poppins">
           {['home', 'portfolio', 'contact'].map((item) => (
-            <a 
-              key={item} 
-              href={`#${item}`} 
+            <a
+              key={item}
+              href={`#${item}`}
               className="group relative whitespace-nowrap hover:text-red-800 transition-colors duration-300"
             >
               <span className="hidden sm:inline">{t(`header.${item}`)}</span>
-              {/* Versión abreviada para móviles */}
               <span className="sm:hidden">
                 {item === 'home' && 'H'}
                 {item === 'portfolio' && 'P'}
@@ -87,7 +77,6 @@ const Header = () => {
 
           <span className="hidden sm:inline mx-2 text-white dark:text-white">|</span>
 
-          {/* Selector de idioma */}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
@@ -134,7 +123,6 @@ const Header = () => {
             )}
           </div>
 
-          {/* Botón de modo oscuro */}
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="text-slate-100 hover:text-red-800 transition-colors duration-300 dark:text-yellow-500"

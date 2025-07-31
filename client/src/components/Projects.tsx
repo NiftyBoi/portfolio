@@ -38,7 +38,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="bg-black py-16 font-poppins dark:bg-slate-100">
+    <section id="projects" className="py-16 font-poppins dark:bg-slate-100">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-red-800 text-4xl font-semibold text-center mb-12">
           {t('projects.title')} <span className='text-slate-100 dark:text-black'>{t('projects.projects')}</span>
