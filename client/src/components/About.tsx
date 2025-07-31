@@ -11,9 +11,10 @@ function About() {
     <div className="min-h-screen flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-7xl px-6 mx-auto py-12">
       
       {/* Modelo 3D */}
-      <div className="w-full md:w-4/12 flex justify-center">
+      <div className="w-full md:w-4/12 flex justify-center md:mr-20">
         <Cat3d />
       </div>
+
 
       {/* Texto descriptivo */}
       <div className="w-full md:w-8/12 space-y-6 font-poppins">

@@ -19,7 +19,12 @@
   "carousel": {
     "title": "Technologies"
   },
-"projectData": {
+  "projects": {
+  "title": "My",
+  "projects": "Projects",
+  "viewProject": "View Project"
+},
+  "projectData": {
   "Hotel-Veranum": {
     "title": "Hotel Veranum",
     "description": "Project for Hotel Veranum, including user login, room reservations, and admin panels."
