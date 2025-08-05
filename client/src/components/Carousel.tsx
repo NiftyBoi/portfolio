@@ -7,7 +7,7 @@ import { IconType } from "react-icons";
 // Importación de íconos específicos desde react-icons
 import { RiReactjsLine, RiTailwindCssFill, RiNodejsLine } from "react-icons/ri";
 import { DiJavascript, DiHtml5, DiCss3 } from "react-icons/di";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript, BiLogoPython  } from "react-icons/bi";
 
 // Hook de traducción para internacionalización
 import { useTranslation } from 'react-i18next';
@@ -27,6 +27,7 @@ const Stack: TechItem[] = [
   { name: "React", icon: RiReactjsLine },
   { name: "Tailwind", icon: RiTailwindCssFill },
   { name: "Node.JS", icon: RiNodejsLine },
+  { name: "Python", icon: BiLogoPython }
 ];
 
 // Componente principal: Carousel
