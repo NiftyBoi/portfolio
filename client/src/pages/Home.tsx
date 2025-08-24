@@ -2,21 +2,26 @@ import About from '../components/About';
 import Carousel from '../components/Carousel';
 import Projects from '../components/Projects';
 import Contactos from '../components/Contactos';
+import Header from '../components/Header';
 
 const Home = () => {
   return (
-    <div className="">
-      <section id="home" className="min-h-screen bg-zinc-900 dark:bg-slate-100 flex items-center justify-center px-6 py-6">
+    <div>
+      
+      <section className="bg-zinc-900 dark:bg-slate-100 p-10 ">
+        <Header />
+      </section>
+      <section id="home" className="bg-zinc-900 dark:bg-slate-100 min-h-screen px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
         <About />
       </section>
 
       {/* Projects y Carousel en una sola sección que ocupa min-h-screen */}
-      <section id="portfolio" className="min-h-screen bg-zinc-900  dark:bg-slate-100 flex flex-col items-center justify-center px-4 py-4 gap-6 scroll-mt-6">
+      <section id="portfolio" className="bg-zinc-900 dark:bg-slate-100 min-h-screen px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
         <Projects />
         <Carousel />
       </section>
 
-      <section id="contact" className="bg-zinc-900  dark:bg-slate-100 flex flex-col px-6 py-6">
+      <section id="contact" className="bg-zinc-900 dark:bg-slate-100 min-h-screen px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
         <Contactos />
       </section>
 
