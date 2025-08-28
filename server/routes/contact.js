@@ -1,7 +1,7 @@
-// server/routes/contact.js
-const express = require('express');
-const nodemailer = require('nodemailer');
-const router = express.Router();
+import { Router } from 'express';
+import nodemailer from 'nodemailer';
+
+const router = Router();
 
 router.post('/', async (req, res) => {
   const { name, email, message } = req.body;
@@ -10,8 +10,8 @@ router.post('/', async (req, res) => {
     service: 'gmail',
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS
-    }
+      pass: process.env.EMAIL_PASS,
+    },
   });
 
   const mailOptions = {
@@ -19,13 +19,14 @@ router.post('/', async (req, res) => {
     to: process.env.EMAIL_TO,
     subject: `Nuevo mensaje de ${name}`,
     text: `
-          Has recibido un nuevo mensaje desde tu portafolio:
+Has recibido un nuevo mensaje desde tu portafolio:
 
-          Nombre: ${name}
-          Correo: ${email}
-          Mensaje: 
-          ${message}`,
-  replyTo: email
+Nombre: ${name}
+Correo: ${email}
+Mensaje: 
+${message}
+    `,
+    replyTo: email,
   };
 
   try {
@@ -37,4 +38,4 @@ router.post('/', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

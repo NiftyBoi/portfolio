@@ -63,14 +63,9 @@ const Header = () => {
             <a
               key={item}
               href={`#${item}`}
-              className="group relative whitespace-nowrap hover:text-red-800 transition-colors duration-300"
+              className="group relative whitespace-nowrap hover:text-red-800 transition-colors duration-300 text-xs sm:text-sm md:text-base"
             >
-              <span className="hidden sm:inline">{t(`header.${item}`)}</span>
-              <span className="sm:hidden">
-                {item === 'home' && 'H'}
-                {item === 'portfolio' && 'P'}
-                {item === 'contact' && 'C'}
-              </span>
+              {t(`header.${item}`)}
               <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-800 group-hover:w-full rounded transition-all duration-300 ease-in-out origin-left"></span>
             </a>
           ))}
