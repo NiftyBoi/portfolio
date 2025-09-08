@@ -36,8 +36,13 @@
   "My First Game": {
     "title": "My First Game",
     "description": "Collaborative Unity game using C# with Lovnelies."
+  },
+  "Proyecto-cuentos-AI": {
+  "title": "AI Stories Project",
+  "description": "Mini project to test features and the connection to the GPT API to generate stories for elementary school children."
   }
 }
+
 ,
   "contact": {
     "title": "My",

@@ -35,6 +35,10 @@
   "My First Game": {
     "title": "Mi Primer Juego",
     "description": "Repositorio colaborativo con Lovnelies para crear un juego en Unity con C# como lenguaje de programación."
+  },
+  "Proyecto-cuentos-AI": {
+    "title": "Proyecto cuentos con IA",
+    "description": "Mini proyecto para probar funcionalidades y la conexión a la API de gpt para generar cuentos para niños de educación básica."
   }
 },
   "contact": {
