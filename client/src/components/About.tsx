@@ -8,7 +8,7 @@ function About() {
     'text-slate-100 dark:text-black text-justify text-base md:text-xl leading-snug'; // más ancho, menos alto
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-7xl px-6 mx-auto py-12">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-7xl px-6 mx-auto py-12">
       
       {/* Modelo 3D */}
       <div className="mt-4 w-full md:w-4/12 flex justify-center md:mr-20">
