@@ -21,7 +21,7 @@ const Home = () => {
         <Carousel />
       </section>
 
-      <section id="contact" className="bg-zinc-900 dark:bg-slate-100 min-h-screen px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
+      <section id="contact" className="bg-zinc-900 dark:bg-slate-100 px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
         <Contactos />
       </section>
 
