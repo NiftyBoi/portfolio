@@ -5,7 +5,7 @@ const Curriculum = () => {
     return(
             <section>
                 {/* Botón de CV */}
-                <a href="https://drive.google.com/file/d/1o1rKygeOMPz0tOLfDjEySfCoOBOtQMg9/view?usp=drive_link" 
+                <a href="https://drive.google.com/file/d/1njgR18Ufc2rw33wFvkvTrOLVa10F0376/view?usp=drive_link" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 download 
