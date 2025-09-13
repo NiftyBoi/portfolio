@@ -19,10 +19,32 @@ const Footer = () => {
                 Github
                 </a>
             </div>
+            
+            {/* Sección de atribuciones */}
+            <div className="bg-black-900/30 backdrop-blur-sm text-center px-4 py-2 border-t border-slate-700/30">
+                <p className="text-slate-400 text-sm font-poppins">
+                    3D Model: "
+                    <a 
+                        href="https://sketchfab.com/3d-models/cute-cat-in-cute-banana-fb3eee24c9fc422ea256b95d5148931f"
+                        className="text-slate-300 hover:text-red-400 transition-colors duration-300 underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Cute cat in cute banana
+                    </a>
+                    " by SOBOL licensed under{' '}
+                    <a 
+                        href="https://creativecommons.org/licenses/by/4.0/"
+                        className="text-slate-300 hover:text-red-400 transition-colors duration-300 underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        CC BY 4.0
+                    </a>
+                </p>
+            </div>
         </footer>
     );
 }
 
-
 export default Footer;
-
