@@ -10,10 +10,9 @@
     "title": "Sobre",
     "me": "Mi",
     "description": {
-      "p1": "¡Hola! Soy Matias Cruz, un desarrollador web apasionado por la tecnología y el diseño. Mi objetivo es crear experiencias digitales únicas, funcionales y fáciles de usar. Me encanta trabajar tanto en el frontend como en el backend, lo que me permite tener una visión completa de cada proyecto que desarrollo.",
-      "p2": "Trabajo con tecnologías modernas como React, Node.js, CSS3, HTML5, JavaScript, entre otras.",
-      "p3": "Soy un aprendiz constante, siempre en busca de nuevos retos y desafíos para mejorar mis habilidades como profesional. Mi pasión por la tecnología me impulsa a estar al tanto de las últimas tendencias y herramientas.",
-      "p4": "Me gusta adoptar un enfoque colaborativo y orientado a resultados, trabajando en equipo para lograr el éxito conjunto. Si estás buscando alguien con una mentalidad creativa y proactiva, ¡no dudes en contactarme!"
+      "p1": "¡Hola! Soy Matías Cruz. Me dedico a construir soluciones de automatización y DevSecOps que ahorran tiempo, reducen errores y optimizan la operación a nivel corporativo. Actualmente me desempeño como Ingeniero RPA en Cencosud, diseñando e implementando bots que interactúan con múltiples sistemas y plataformas críticas.",
+      "p2": "Mi experiencia abarca desde la extracción segura de datos y la gestión en Active Directory, hasta la integración de inteligencia artificial para la clasificación de tickets operativos. Mi stack actual se centra fuertemente en Python y Playwright, siempre velando por el rendimiento, la seguridad y la mantenibilidad del código bajo el patrón de diseño POM.",
+      "p3": "Disfruto enfrentar retos arquitectónicos, resolver problemas de configuración en servidores y llevar proyectos desde su concepción hasta su despliegue en producción. Si tu equipo necesita a alguien que entienda tanto de desarrollo puro como de seguridad y operaciones, hablemos."
     }},
   "carousel": {
     "title": "Tecnologías"

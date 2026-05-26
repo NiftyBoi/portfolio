@@ -2,14 +2,9 @@
   "name": "portafolio",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix client\" \"npm start --prefix server\""
-  },
-  "dependencies": {
-    "nodemailer": "^6.10.1"
+    "dev": "npm run dev --prefix client"
   },
   "devDependencies": {
-    "@vercel/node": "^3.0.0",
-    "@types/nodemailer": "^6.4.14",
     "concurrently": "^9.1.2"
   }
 }

@@ -24,7 +24,7 @@ function About() {
         </h2>
 
         <div className="bg-slate-100/10 dark:bg-gray-100/70 dark:backdrop-blur-lg border border-transparent dark:border-red-800 rounded-lg shadow-lg p-8 space-y-3">
-          {[1, 2, 3, 4].map((i) => (
+          {[1, 2, 3].map((i) => (
             <p key={i} className={paragraphClass}>
               {t(`about.description.p${i}`)}
             </p>

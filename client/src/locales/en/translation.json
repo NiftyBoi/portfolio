@@ -10,10 +10,9 @@
     "title": "About",
     "me": "Me",
     "description": {
-      "p1": "Hi! I'm Matias Cruz, a web developer passionate about technology and design. My goal is to create unique, functional, and user-friendly digital experiences. I enjoy working on both the frontend and backend, which allows me to have a complete view of each project I develop.",
-      "p2": "I work with modern technologies such as React, Node.js, CSS3, HTML5, JavaScript, among others.",
-      "p3": "I'm a constant learner, always looking for new challenges to improve my professional skills. My passion for technology drives me to stay up to date with the latest trends and tools.",
-      "p4": "I like to take a collaborative and results-oriented approach, working in teams to achieve shared success. If you're looking for someone with a creative and proactive mindset, feel free to contact me!"
+      "p1": "Hi! I'm Matías Cruz. I build automation and DevSecOps solutions that save time, reduce errors, and optimize operations at the corporate level. I currently work as an RPA Engineer at Cencosud, designing and implementing bots that interact with multiple critical systems and platforms.",
+      "p2": "My experience ranges from secure data extraction and Active Directory management to integrating artificial intelligence for operational ticket classification. My current stack is heavily centered on Python and Playwright, always prioritizing performance, security, and code maintainability under the POM design pattern.",
+      "p3": "I enjoy tackling architectural challenges, solving server configuration issues, and taking projects from conception to production deployment. If your team needs someone who understands both pure development and security operations, let's talk."
     }
   },
   "carousel": {
