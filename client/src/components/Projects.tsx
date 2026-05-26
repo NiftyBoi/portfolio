@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useFadeIn } from '../hooks/useFadeIn';
 
 interface GitHubProject {
   name: string;
@@ -7,7 +8,6 @@ interface GitHubProject {
   html_url: string;
 }
 
-// Mapeo de nombre de proyecto → imagen
 const projectImages: Record<string, string> = {
   "My First Game": "/images/project1.png",
   "Proyecto-cuentos-AI": "/images/project2.png",
@@ -17,7 +17,6 @@ const projectImages: Record<string, string> = {
 
 const DEFAULT_IMAGE = "/images/project1.png";
 
-// Datos fuera del componente para evitar recrearlos en cada render
 const excludedRepos = ['niftyboi', 'portfolio', 'uptolimit', 'hotel-veranum', 'fast-notes'];
 
 const featuredCollaborations: GitHubProject[] = [
@@ -28,7 +27,6 @@ const featuredCollaborations: GitHubProject[] = [
   }
 ];
 
-// Fallback local en caso de que la API de GitHub falle
 const fallbackProjects: GitHubProject[] = [
   ...featuredCollaborations,
   {
@@ -53,6 +51,7 @@ const Projects = () => {
   const [projects, setProjects] = useState<GitHubProject[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const { ref, isVisible } = useFadeIn();
 
   useEffect(() => {
     fetch('https://api.github.com/users/NiftyBoi/repos')
@@ -79,7 +78,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-16 font-poppins dark:bg-slate-100">
+    <section ref={ref} id="projects" className={`fade-in ${isVisible ? 'visible' : ''} py-16 font-poppins dark:bg-slate-100`}>
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-red-800 text-4xl font-semibold text-center mb-12">
           {t('projects.title')} <span className='text-slate-100 dark:text-black'>{t('projects.projects')}</span>
@@ -109,6 +108,7 @@ const Projects = () => {
                   <img
                     src={projectImages[project.name] || DEFAULT_IMAGE}
                     alt={project.name}
+                    loading="lazy"
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>

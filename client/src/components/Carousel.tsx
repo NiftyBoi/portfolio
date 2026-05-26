@@ -5,6 +5,7 @@ import { BiLogoTypescript, BiLogoPython } from "react-icons/bi";
 import { TbBrandPowershell } from "react-icons/tb";
 import { FaGithub, FaGitAlt } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
+import { useFadeIn } from '../hooks/useFadeIn';
 
 type TechItem = {
   name: string;
@@ -22,9 +23,10 @@ const Stack: TechItem[] = [
 
 const Carousel = () => {
   const { t } = useTranslation();
+  const { ref, isVisible } = useFadeIn();
 
   return (
-    <div className="py-8 dark:bg-slate-100">
+    <div ref={ref} className={`fade-in ${isVisible ? 'visible' : ''} py-8 dark:bg-slate-100`}>
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-center text-slate-100 font-poppins font-semibold mb-6 dark:bg-slate-100 dark:text-red-800 text-4xl">
           {t('carousel.title')}

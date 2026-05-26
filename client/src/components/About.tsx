@@ -1,22 +1,20 @@
 import { useTranslation } from 'react-i18next';
 import Cat3d from './models3d/Cat3d';
+import { useFadeIn } from '../hooks/useFadeIn';
 
 function About() {
   const { t } = useTranslation();
+  const { ref, isVisible } = useFadeIn();
 
   const paragraphClass =
-    'text-slate-100 dark:text-black text-justify text-base md:text-xl leading-snug'; // más ancho, menos alto
+    'text-slate-100 dark:text-black text-justify text-base md:text-xl leading-snug';
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-7xl px-6 mx-auto py-12">
-      
-      {/* Modelo 3D */}
+    <div ref={ref} className={`fade-in ${isVisible ? 'visible' : ''} flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 max-w-7xl px-6 mx-auto py-12`}>
       <div className="mt-4 w-full md:w-4/12 flex justify-center md:mr-20">
         <Cat3d />
       </div>
 
-
-      {/* Texto descriptivo */}
       <div className="w-full md:w-8/12 space-y-6 font-poppins">
         <h2 className="font-bold text-slate-100 text-5xl md:text-6xl dark:text-black">
           <span>{t('about.title')}</span>

@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import { useTranslation } from 'react-i18next';
 import Curriculum from './Curriculum';
+import { useFadeIn } from '../hooks/useFadeIn';
 
 type FormStatus = 'idle' | 'sending' | 'success' | 'error';
 
@@ -10,6 +11,7 @@ const ContactForm = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState<FormStatus>('idle');
+  const { ref, isVisible } = useFadeIn();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -43,7 +45,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="dark:bg-slate-100 text-white py-12 px-4 font-poppins">
+    <div ref={ref} className={`fade-in ${isVisible ? 'visible' : ''} dark:bg-slate-100 text-white py-12 px-4 font-poppins`}>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
 
         <div className="md:w-1/2">
