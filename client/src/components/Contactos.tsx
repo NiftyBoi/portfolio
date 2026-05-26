@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     try {
       // Envía los datos del formulario a una API local
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
