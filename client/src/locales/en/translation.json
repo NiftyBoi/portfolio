@@ -25,21 +25,21 @@
   "viewProject": "View Project"
 },
   "projectData": {
-  "Hotel-Veranum": {
-    "title": "Hotel Veranum",
-    "description": "Project for Hotel Veranum, including user login, room reservations, and admin panels."
-  },
-  "Fast-Notes": {
-    "title": "Fast Notes",
-    "description": "Stylish notes for your desktop or laptop."
-  },
   "My First Game": {
     "title": "My First Game",
     "description": "Collaborative Unity game using C# with Lovnelies."
   },
   "Proyecto-cuentos-AI": {
-  "title": "AI Stories Project",
-  "description": "Mini project to test features and the connection to the GPT API to generate stories for elementary school children."
+    "title": "AI Stories Project",
+    "description": "Mini project to test features and the connection to the GPT API to generate stories for elementary school children."
+  },
+  "Chatbot": {
+    "title": "AI Chatbot",
+    "description": "Interactive chatbot built with artificial intelligence."
+  },
+  "eda-grupal-2025": {
+    "title": "EDA Group 2025",
+    "description": "Project from the Machine Learning & AI diploma. Minimal and reproducible Exploratory Data Analysis on a CSV dataset, following Python, OOP and automated testing best practices."
   }
 }
 
