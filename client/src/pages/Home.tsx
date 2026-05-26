@@ -6,29 +6,23 @@ import Header from '../components/Header';
 
 const Home = () => {
   return (
-    <div>
-      
-      <div className="bg-zinc-900 dark:bg-slate-100 pt-24">
-        <Header />
-      </div>
-      <section id="home" className="bg-zinc-900 dark:bg-slate-100 min-h-screen px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
-        <div className="pt-20">
-          <About />
-        </div>
-        <div className="pt-20">
+    <div className="bg-zinc-900 dark:bg-slate-100 overflow-x-hidden">
+      <Header />
+
+      <section id="home" className="pt-28 pb-16 px-4 sm:px-8 lg:px-12">
+        <About />
+        <div className="mt-16">
           <Carousel />
         </div>
       </section>
 
-      {/* Projects y Carousel en una sola sección que ocupa min-h-screen */}
-      <section id="portfolio" className="bg-zinc-900 dark:bg-slate-100 min-h-screen px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
+      <section id="portfolio" className="py-16 px-4 sm:px-8 lg:px-12">
         <Projects />
       </section>
 
-      <section id="contact" className="bg-zinc-900 dark:bg-slate-100 px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
+      <section id="contact" className="py-16 px-4 sm:px-8 lg:px-12">
         <Contactos />
       </section>
-
     </div>
   );
 };
