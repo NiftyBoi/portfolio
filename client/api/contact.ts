@@ -14,6 +14,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(400).json({ success: false, message: "Faltan campos requeridos" });
   }
 
+  // Log para debug (eliminar después de confirmar que funciona)
+  console.log("EMAIL_USER definido:", !!process.env.EMAIL_USER);
+  console.log("EMAIL_PASS definido:", !!process.env.EMAIL_PASS);
+  console.log("EMAIL_TO definido:", !!process.env.EMAIL_TO);
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
