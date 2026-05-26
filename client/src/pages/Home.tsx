@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div>
       
-      <section className="bg-zinc-900 dark:bg-slate-100 p-10 ">
+      <div className="bg-zinc-900 dark:bg-slate-100 pt-24">
         <Header />
-      </section>
+      </div>
       <section id="home" className="bg-zinc-900 dark:bg-slate-100 min-h-screen px-4 sm:px-8 md:px-12 text-center md:text-left overflow-x-hidden">
         <div className="pt-20">
           <About />
