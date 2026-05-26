@@ -1,8 +1,9 @@
 import Marquee from "react-fast-marquee";
 import { IconType } from "react-icons";
-import { RiReactjsLine, RiTailwindCssFill, RiNodejsLine } from "react-icons/ri";
-import { DiJavascript, DiHtml5, DiCss3 } from "react-icons/di";
+import { DiJavascript } from "react-icons/di";
 import { BiLogoTypescript, BiLogoPython } from "react-icons/bi";
+import { TbBrandPowershell } from "react-icons/tb";
+import { FaGithub, FaGitAlt } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 
 type TechItem = {
@@ -11,14 +12,12 @@ type TechItem = {
 };
 
 const Stack: TechItem[] = [
+  { name: "Python", icon: BiLogoPython },
   { name: "Javascript", icon: DiJavascript },
   { name: "TypeScript", icon: BiLogoTypescript },
-  { name: "HTML", icon: DiHtml5 },
-  { name: "CSS", icon: DiCss3 },
-  { name: "React", icon: RiReactjsLine },
-  { name: "Tailwind", icon: RiTailwindCssFill },
-  { name: "Node.JS", icon: RiNodejsLine },
-  { name: "Python", icon: BiLogoPython }
+  { name: "PowerShell", icon: TbBrandPowershell },
+  { name: "Git", icon: FaGitAlt },
+  { name: "GitHub", icon: FaGithub },
 ];
 
 const Carousel = () => {
